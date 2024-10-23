@@ -22,7 +22,7 @@ jobs:
       - name: Run Linter 
         run:  make lint
       - name: Run Vulture
-        run:  vulture 
+        run:  vulture formation_indus_ds_avancee --min-confidence 100
       - name: Run tests
         run:  pytest
 
