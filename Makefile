@@ -66,3 +66,7 @@ airflow-webserver:
 airflow-scheduler:
 	echo "AIRFLOW_HOME is: ${AIRFLOW_HOME}"
 	airflow scheduler
+
+.PHONY: lint  ## 🌐  Try to do linter 
+lint:
+	flake8 --ignore=E402
