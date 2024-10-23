@@ -24,6 +24,6 @@ jobs:
       - name: Run Vulture
         run:  vulture formation_indus_ds_avancee --min-confidence 100
       - name: Run tests
-        run:  pytest
+        run:  make tests-unitaires
 
 
